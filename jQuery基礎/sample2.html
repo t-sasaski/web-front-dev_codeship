@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/sample2.css">
+</head>
+<body>
+    <div class="target">ddd</div>
+
+    <div class="target">target1</div>
+    <div class="target">target2</div>
+    <div class="target">target3</div>
+    <div class="target">target4</div>
+
+    <script>
+        
+        // $(function(){
+        //     $(".target").mouseover(function(){
+        //         // toggleClass(className) : 選択した要素が指定したクラスを持っていれば除去し、持っていなければ付加するメソッド。
+        //         $(this).toggleClass("active");
+        //     });
+        //     // 関連メソッド
+        //     // addClass(className) → クラス名を要素に与えます。すでにそのクラス名を持っていたら何も起こりません。
+        //     // removeClass(className) → クラス名を要素から削除します。
+        // });
+
+        // // 2つのイベントトリガーを登録
+        // $(".target").on("click focus", function() {
+        //     $(this).addClass("active");
+        // });
+        $(".target").on({
+            'keydown': function() {
+                $(this).addClass("active");
+            },
+            'keyup': function() {
+                $(this).removeClass("active");
+            }
+        });
+        
+    </script>
+</body>
+</html>
+
+
+

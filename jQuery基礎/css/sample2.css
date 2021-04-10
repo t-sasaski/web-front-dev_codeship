@@ -1,0 +1,6 @@
+.target {
+    background-color: red;
+}
+.target.active {
+    background-color: blue;
+}

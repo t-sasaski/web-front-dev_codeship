@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>aaaa</p>
+    <p class="btn">あああ</p>
+    <div class="btn">ffffffffff</div>
+    <div class="sample">
+        Smaple
+    </div>
+
+
+    <script>
+        $(function() {
+            $("p:nth-child(1)").css("color","yellow");
+        });
+        $(".btn").css({
+            fontSize: "50px",
+            backgroundColor: "#ae5e9b",
+            color: "#ebc000",
+            transform: "rotate(-10deg)",
+            opacity: "0.7"
+        });
+        // 設問１
+        $(".sample").css({
+            backgroundColor:"#76d3f4",
+            textAlign: "center",
+            width: "300px",
+            margin: "auto",
+            padding: "20px",
+            color: "#fff"
+        });
+        
+    </script>
+</body>
+</html>

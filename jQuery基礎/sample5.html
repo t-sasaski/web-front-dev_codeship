@@ -1,0 +1,51 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/sample5.css">
+<div id="id">
+    <div class="col-sm-6">
+        <button class="sample-btn sample-p8-2-true" style="width: 300px; height: 100px;">
+            Stop(true)
+        </button>
+        <button class="sample-btn sample-p8-2-false" style="width: 300px; height: 100px;">
+            Stop(false)
+        </button>
+    
+        <script>
+            $(function() {
+                $(".sample-p8-2-true").on({
+                    'mouseover': function() {
+                        $(this).stop(true).animate({
+                            width: "600px",
+                        }).animate({
+                            height: "200px"
+                        })
+                    },
+                    'mouseout': function() {
+                        $(this).stop(true).animate({
+                            width: "300px",
+                        }).animate({
+                            height: "100px"
+                        })
+                    }
+                })
+                $(".sample-p8-2-false").on({
+                    'mouseover': function() {
+                        $(this).animate({
+                            width: "600px",
+                        }).animate({
+                            height: "200px"
+                        })
+                    },
+                    'mouseout': function() {
+                        $(this).animate({
+                            width: "300px",
+                        }).animate({
+                            height: "100px"
+                        })
+                    }
+                })
+            });
+        </script>
+    </div>
+</div>
+
+

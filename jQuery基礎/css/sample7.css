@@ -1,0 +1,16 @@
+/*外枠はrelativeとします。*/
+.sample-kw {
+    position: relative;
+}
+/*中の16のdivには色をつけます。*/
+.sample-kw div {
+    position: absolute;
+    color: white;
+    background-color: #3498db;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+}
+
+
+

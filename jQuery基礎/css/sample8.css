@@ -1,0 +1,19 @@
+.btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.action {
+    border-color: #5bc0de;
+    color: #5bc0de;
+}
+
+.reset {
+    border-color: #5bc0de;
+    color: #5bc0de;
+}
+
+
+

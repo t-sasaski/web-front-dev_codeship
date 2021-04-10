@@ -1,0 +1,41 @@
+.s10w button {
+    position: relative;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 0px solid #ae5e9b;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+/* button直下のspanのみ*/
+.s10w button > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden; /* はみ出た部分が見えなくなっている */
+}
+
+/* button 2段階下のspan */
+.s10w button span span {
+    line-height: 99px;
+    display: block;
+    background-color: #ae5e9b;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.s10w button:focus {
+    outline: none;
+}
+
+
+
+

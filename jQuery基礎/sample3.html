@@ -1,0 +1,47 @@
+<!-- 設問２ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/sample3.css">
+</head>
+<body>
+    <div>
+        <button class="btn">Click me</button>
+    </div>
+
+    <script>
+        $(function() {
+            $(".btn").on({
+                'mousedown': function() {
+                    $(this).addClass("change")
+                },
+                'mouseup': function() {
+                    $(this).removeClass("change")
+                },
+                'mouseover': function() {
+                    $(this).addClass("active")
+                },
+                'mouseout':function() {
+                    $(this).removeClass("active")
+                }
+            });
+            
+        });
+       
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
